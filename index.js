@@ -6,9 +6,8 @@ mongoose.connect("mongodb+srv://Yash:yash123@cluster0.fl0lc.mongodb.net/students
 ()=>{
     const app = express();
     app.use("/api",route);
-    app.listen(process.env.PORT || 3000,()=>{
+    app.listen(3000,()=>{
         console.log("server started..!!");
     })
 
-}
-);
+});
